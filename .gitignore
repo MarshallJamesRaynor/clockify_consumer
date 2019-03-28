@@ -63,4 +63,3 @@ typings/
 
 # intellij folder
 /.idea
-/dist/bundle.js
