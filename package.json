@@ -52,7 +52,7 @@
   },
   "fileName": {
     "bundle": "bundle.js",
-    "main": "index.ts"
+    "main": "src/index.ts"
   },
   "dependencies": {}
 }

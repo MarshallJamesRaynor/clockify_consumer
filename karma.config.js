@@ -1,17 +1,13 @@
 // Karma configuration
-
 // Application configuration
 const pkg = require('./package.json');
-
 // Use the "export" command to define the KARMA_PORT port; otherwise,
 // use the default port number specified in the package.json
 const KARMA_PORT = process.env.KARMA_PORT || pkg.karmaPort;
-
 module.exports = (config) => {
     config.set({
         // Base path that will be used to resolve all patterns (eg. files, exclude)
         basePath: '',
-
         // Frameworks to include: https://npmjs.org/browse/keyword/karma-adapter
         // jasmine: Development/Testing framework https://jasmine.github.io/
         // source-map-support: Create sourcemaps so that errors in the transpiled code matches the untranspiled code https://www.npmjs.com/package/source-map-support
@@ -49,30 +45,22 @@ module.exports = (config) => {
                 return path.replace(/\.ts$/, '.js');
             }
         },
-
         // Use "mocha" as the testing reporter https://npmjs.org/browse/keyword/karma-reporter
         reporters: ['mocha'],
-
         // Web server port
         port: KARMA_PORT,
-
         // Enable/disable colors in the standard output stream (stdout) (reporters and logs)
         colors: true,
-
         // Supported values:
         // config.LOG_DISABLE, config.LOG_ERROR, config.LOG_WARN, config.LOG_INFO, config.LOG_DEBUG
         logLevel: config.LOG_INFO,
-
         // Enable/disable watching files and executing tests whenever there are file changes
         autoWatch: true,
-
         // Start the following browsers https://npmjs.org/browse/keyword/karma-launcher
         browsers: ['PhantomJS'],
-
         // Continuous Integration mode
         // If true, Karma captures browsers, runs the tests and immdiately exits
         singleRun: false,
-
         // Concurrency level (number of browsers to start simultaneously)
         concurrency: Infinity,
     });
