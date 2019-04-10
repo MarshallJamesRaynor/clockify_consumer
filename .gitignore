@@ -60,7 +60,8 @@ typings/
 # next.js build output
 .next
 
-
 # intellij folder
 /.idea
+
+# build folder
 /dist

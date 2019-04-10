@@ -54,5 +54,8 @@
     "bundle": "bundle.js",
     "main": "src/index.ts"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@types/dotenv": "6.1.1",
+    "dotenv": "7.0.0"
+  }
 }
