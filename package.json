@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "rm -rf dist && webpack -p",
+    "build": "del dist && webpack -p",
     "build:debug": "webpack -d",
     "build:watch": "webpack -d --watch",
     "lint": "eslint src",

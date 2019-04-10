@@ -1,5 +1,16 @@
-import axios from "axios"
+import axios from 'axios';
 
-let username = 'MarshallJamesRaynor';
 
-axios.get('https://api.github.com/users/' + username);
+axios.get('https://dog.ceo/api/breeds/list/all')
+  .then(function (response) {
+    // handle success
+    console.log(response);
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
+  .then(function () { 
+    // always executed
+  });
+

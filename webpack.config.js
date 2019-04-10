@@ -20,6 +20,10 @@ const config =  {
         extensions: [ '.tsx', '.ts', '.js' ]
     },
     watch: true,
+    // https://webpack.js.org/concepts/targets/
+    target: 'node',
+    //https://webpack.js.org/configuration/node/
+    node: { process: false },
     module: {
         rules: [
             {
